@@ -97,15 +97,14 @@ img {
     text-decoration: none;
     &:hover{
       color: $accent-color;
+      .header__icon{
+        fill:$accent-color;
+      }
     }
   }
-  &:hover{
-    fill: $accent-color;
-  }
+  
 }
-.header__icon{
-  fill:$grey-color;
-}
+
 .header-active{
   position: relative;
   color: $accent-color;

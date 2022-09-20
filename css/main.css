@@ -237,13 +237,9 @@ img {
 .header__phone a:hover {
   color: #2196f3;
 }
-.header__email:hover,
-.header__phone:hover {
+.header__email a:hover .header__icon,
+.header__phone a:hover .header__icon {
   fill: #2196f3;
-}
-
-.header__icon {
-  fill: #757575;
 }
 
 .header-active {

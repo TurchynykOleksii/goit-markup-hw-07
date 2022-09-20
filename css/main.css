@@ -230,7 +230,7 @@ img {
   gap: 10px;
   color: inherit;
   line-height: 1.1;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
 }
 .header__email a:hover,
@@ -240,6 +240,7 @@ img {
 .header__email a:hover .header__icon,
 .header__phone a:hover .header__icon {
   fill: #2196f3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-active {

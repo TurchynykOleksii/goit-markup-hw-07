@@ -2,27 +2,30 @@
   padding: 60px 0;
   background-color: $grey-dark-color;
 }
+
 .footer__address {
   font-size: 14px;
 }
-.footer__address_list {
+
+.footer__address-list {
   display: flex;
   flex-direction: column;
   gap: 9px;
 }
+
 .footer__logo {
   font-family: $font-releway;
   font-size: 26px;
-
-  line-height: 1.1;
-}
-.footer__logo {
   display: inline-block;
   margin-bottom: 20px;
   color: $white-color;
+  line-height: 1.1;
 }
-.footer__social > li {
-  
+
+
+
+.team__link {
+
   background-color: $social-color-footer;
 }
 
@@ -30,26 +33,28 @@
   fill: $white-color;
 }
 
-.footer__adress_item  {
-  a{
+.footer__adress-item {
+  a {
     color: $white-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
 }
 
-.footer__adress_item-grey  {
-  a{
+.footer__adress_item-grey {
+  a {
     color: $grey-color;
   }
-  
+
 }
+
 .footer__address {
   display: flex;
   align-items: center;
   font-style: inherit;
   gap: 70px;
 }
+
 .footer__social-text {
   margin-bottom: 20px;
   font-size: 14px;
@@ -57,28 +62,32 @@
   color: $white-color;
   text-transform: uppercase;
 }
+
 .footer__adress {
   display: flex;
 
   align-items: baseline;
 }
 
-.footer__adress_wrapper {
+.footer__adress-wrapper {
   margin-right: 70px;
 }
 
-.footer__adress_item a,
-.footer__adress_item a{
+.footer__adress-item a,
+.footer__adress-item a {
+
   &:hover,
-  &:focus{
-    
-  color: $accent-color;
+  &:focus {
+
+    color: $accent-color;
   }
 }
+
 .footer__form {
   margin-left: auto;
 }
-.footer__form_email {
+
+.footer__form-email {
   margin-right: 15px;
   padding: 15px;
   width: 358px;
@@ -88,18 +97,21 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
-.footer__form_headline {
+
+.footer__form-headline {
   margin-bottom: 20px;
   font-size: 14px;
   font-weight: 700;
   color: $white-color;
   text-transform: uppercase;
 }
-.footer__form_group {
+
+.footer__form-group {
   display: flex;
   align-items: center;
 }
-.footer_form_btn {
+
+.footer_form-btn {
   display: flex;
   align-items: center;
 
@@ -108,9 +120,10 @@
 }
 
 .footer__logo,
-.footer__adress_item a {
+.footer__adress-item a {
   text-decoration: none;
 }
+
 .logo__accent-text {
   color: $accent-color;
   fill: $accent-color;

@@ -243,6 +243,10 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.header__icon {
+  fill: #757575;
+}
+
 .header-active {
   position: relative;
   color: #2196f3;
@@ -327,7 +331,7 @@ img {
   gap: 30px;
 }
 
-.benefits__item_headline {
+.benefits__item-headline {
   margin-bottom: 10px;
   font-size: 14px;
   font-weight: 700;
@@ -336,7 +340,7 @@ img {
   text-transform: uppercase;
 }
 
-.benefits__item_description {
+.benefits__item-description {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -374,7 +378,7 @@ img {
   position: relative;
 }
 
-.session__img_text {
+.session__img-text {
   position: absolute;
   height: 70px;
   bottom: 0;
@@ -404,23 +408,21 @@ img {
   margin-bottom: 50px;
 }
 
-.team__list_item {
+.team__list-item {
   background-color: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team__item_headline {
-  margin-top: 30px;
+.team__item-headline {
   margin-bottom: 10px;
 }
 
-.team__item_subline {
+.team__item-subline {
   margin-bottom: 16px;
 }
 
 .team__social {
-  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -433,7 +435,13 @@ img {
   border-radius: 50%;
 }
 
-.team__link_tag {
+.team__svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.team__link-tag {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -442,17 +450,10 @@ img {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.team__svg {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
-}
-
-.team__link_tag:hover {
+.team__link-tag:hover {
   background-color: #2196f3;
 }
-.team__link_tag:hover .team__svg {
+.team__link-tag:hover .team__svg {
   fill: white;
 }
 
@@ -464,20 +465,25 @@ img {
   letter-spacing: 0.03em;
 }
 
-.team__item_headline {
+.team__item-headline {
   font-weight: 500;
 }
 
-.team__item_subline {
+.team__item-subline {
   color: #757575;
 }
 
-.team__item_headline,
-.team__item_subline {
+.team__item-headline,
+.team__item-subline {
   font-size: 16px;
   letter-spacing: 0.03em;
   line-height: 1.1;
   text-align: center;
+}
+
+.team__group {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .partners__headline {
@@ -539,7 +545,7 @@ img {
   font-size: 14px;
 }
 
-.footer__address_list {
+.footer__address-list {
   display: flex;
   flex-direction: column;
   gap: 9px;
@@ -548,16 +554,13 @@ img {
 .footer__logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
-  line-height: 1.1;
-}
-
-.footer__logo {
   display: inline-block;
   margin-bottom: 20px;
   color: #f5f5f5;
+  line-height: 1.1;
 }
 
-.footer__social > li {
+.team__link {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -565,7 +568,7 @@ img {
   fill: #f5f5f5;
 }
 
-.footer__adress_item a {
+.footer__adress-item a {
   color: #f5f5f5;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -594,13 +597,13 @@ img {
   align-items: baseline;
 }
 
-.footer__adress_wrapper {
+.footer__adress-wrapper {
   margin-right: 70px;
 }
 
-.footer__adress_item a:hover, .footer__adress_item a:focus,
-.footer__adress_item a:hover,
-.footer__adress_item a:focus {
+.footer__adress-item a:hover, .footer__adress-item a:focus,
+.footer__adress-item a:hover,
+.footer__adress-item a:focus {
   color: #2196f3;
 }
 
@@ -608,7 +611,7 @@ img {
   margin-left: auto;
 }
 
-.footer__form_email {
+.footer__form-email {
   margin-right: 15px;
   padding: 15px;
   width: 358px;
@@ -619,7 +622,7 @@ img {
   border-radius: 4px;
 }
 
-.footer__form_headline {
+.footer__form-headline {
   margin-bottom: 20px;
   font-size: 14px;
   font-weight: 700;
@@ -627,12 +630,12 @@ img {
   text-transform: uppercase;
 }
 
-.footer__form_group {
+.footer__form-group {
   display: flex;
   align-items: center;
 }
 
-.footer_form_btn {
+.footer_form-btn {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -640,7 +643,7 @@ img {
 }
 
 .footer__logo,
-.footer__adress_item a {
+.footer__adress-item a {
   text-decoration: none;
 }
 
@@ -720,11 +723,12 @@ img {
   flex-direction: column;
 }
 
-.form__item span {
+.form__headline-name {
   margin-bottom: 4px;
 }
 
-.form__item input {
+.form__input,
+.form__comment {
   font-size: 18px;
 }
 
@@ -740,7 +744,7 @@ img {
   text-align: center;
 }
 
-.form__link_terms {
+.form__link-terms {
   font-size: 14px;
   color: #757575;
 }
@@ -752,7 +756,7 @@ img {
   border-radius: 4px;
 }
 
-.form__item_btn {
+.form__item-btn {
   margin-top: 30px;
 }
 
@@ -800,7 +804,7 @@ img {
   outline: none;
 }
 
-.form__label_checkbox {
+.form__label-checkbox {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -818,7 +822,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__checkbox_check {
+.form__checkbox-check {
   margin-right: 8px;
   width: 16px;
   height: 16px;
@@ -826,24 +830,24 @@ img {
   border-radius: 2px;
 }
 
-.form__checkbox:checked + .form__checkbox_check {
+.form__checkbox:checked + .form__checkbox-check {
   background-color: #2196f3;
   background-image: url("../images/Checked.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.form__item_btn {
+.form__item-btn {
   margin-bottom: 0;
   display: flex;
   align-items: center;
 }
 
-.form__item_chexbox {
+.form__item-chexbox {
   margin-top: 20px;
 }
 
-.form__item:not(.form__item_btn, .form__textarea, .form__item_chexbox) {
+.form__item:not(.form__item-btn, .form__textarea, .form__item-chexbox) {
   margin-bottom: 10px;
 }
 
@@ -858,7 +862,7 @@ img {
   gap: 9px;
 }
 
-.jobs__item button {
+.jobs__btn {
   padding: 6px 22px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -871,8 +875,7 @@ img {
   letter-spacing: 0.03em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.jobs__item button:hover, .jobs__item button:focus {
+.jobs__btn:hover, .jobs__btn:focus {
   background-color: #2196f3;
   color: #f5f5f5;
   cursor: pointer;
@@ -901,16 +904,16 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.jobs__card a:hover .jobs__img_text, .jobs__card a:focus .jobs__img_text {
+.jobs__card a:hover .jobs__img-text, .jobs__card a:focus .jobs__img-text {
   transform: translateY(0);
 }
 
-.jobs__img_container {
+.jobs__img-container {
   position: relative;
   overflow: hidden;
 }
 
-.jobs__img_text {
+.jobs__img-text {
   padding: 63px 24px;
   position: absolute;
   top: 0;

@@ -1,6 +1,7 @@
 .session {
   padding-top: 0;
 }
+
 .session__headline {
   margin-bottom: 50px;
   font-size: 36px;
@@ -9,14 +10,17 @@
   line-height: 1.1;
   letter-spacing: 0.03em;
 }
-.session__list{
+
+.session__list {
   display: flex;
   gap: 30px;
 }
-.session__item{
+
+.session__item {
   position: relative;
 }
-.session__img_text{
+
+.session__img-text {
   position: absolute;
   height: 70px;
   bottom: 0;

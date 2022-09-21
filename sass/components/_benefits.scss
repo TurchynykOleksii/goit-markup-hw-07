@@ -1,6 +1,7 @@
 .benefits__headline {
   display: none;
 }
+
 .benefits__list,
 .session__list,
 .team__list,
@@ -8,13 +9,14 @@
 .partners__list {
   list-style: none;
 }
+
 .team__list,
 .benefits__list {
   display: flex;
   gap: 30px;
 }
 
-.benefits__item_headline {
+.benefits__item-headline {
   margin-bottom: 10px;
   font-size: 14px;
   font-weight: 700;
@@ -22,12 +24,14 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.benefits__item_description {
+
+.benefits__item-description {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: $grey-color;
 }
+
 .benefits__thumb {
   height: 120px;
   margin-bottom: 30px;
